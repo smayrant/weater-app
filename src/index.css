@@ -6,6 +6,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #111d5a;
+background: -moz-linear-gradient(left, #111d5a 6%, #8562cd 38%, #cb84ed 81%, #f7a5c9 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(6%,#111d5a), color-stop(38%,#8562cd), color-stop(81%,#cb84ed), color-stop(100%,#f7a5c9));
+background: -webkit-linear-gradient(left, #111d5a 6%,#8562cd 38%,#cb84ed 81%,#f7a5c9 100%);
+background: -o-linear-gradient(left, #111d5a 6%,#8562cd 38%,#cb84ed 81%,#f7a5c9 100%);
+background: -ms-linear-gradient(left, #111d5a 6%,#8562cd 38%,#cb84ed 81%,#f7a5c9 100%);
+background: linear-gradient(to right, #111d5a 6%,#8562cd 38%,#cb84ed 81%,#f7a5c9 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111d5a', endColorstr='#f7a5c9',GradientType=1 );
 }
 
 code {

@@ -4,9 +4,9 @@ const Form = props =>
     (
         <div>
             <form onSubmit={props.getWeather}>
-                <input type="text" name="city" placeholder="Please enter  a city" />
-                <input type="text" name="country" placeholder="Please enter  a country" />
-                <button>Get Weather</button>
+                <input className="input" type="text" name="city" placeholder="Please enter  a city" />
+                <input className="input" type="text" name="country" placeholder="Please enter  a country" />
+                <button className="btn btn-primary">Get Weather</button>
             </form>
         </div>
     )
