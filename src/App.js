@@ -30,10 +30,13 @@ class App extends Component {
     // convert the returned data into JSON
     const data = await api_call.json();
 
+    // convert the temperature to fahrenheit
+    // data.main.temp = Math.round(data.main.temp * 9 / 5 + 32);
+
     // only set the state if the city and country input fields aren't empty
     if (city && country) {
       this.setState({
-        temperature: data.main.temp,
+        temperature: data.main.temp = Math.round(data.main.temp * 9 / 5 + 32),
         city: data.name,
         country: data.sys.country,
         humidity: data.main.humidity,
@@ -47,7 +50,7 @@ class App extends Component {
         country: undefined,
         humidity: undefined,
         description: undefined,
-        error: 'Please enter a valid city and corresponding country'
+        error: "Please enter a valid city and the corresponding country's initials"
       });
     }
   }

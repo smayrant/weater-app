@@ -1,19 +1,3 @@
- .wrapper {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main {
-  height: 70vh;
-  background: #fff;
-  box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
-  
-  margin: 0 auto;
-} 
-
-
 /* ------------ Left Side Styling ------------- */
 
 .title-container{
@@ -44,6 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .input{
@@ -76,4 +61,13 @@
 .weather-value {
   color: #fff;
   font-weight: 200;
+}
+
+.weather-div{
+    display: block;
+    width: 50%;
+}
+
+.error-msg{
+    color: white;
 }
